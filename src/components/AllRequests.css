@@ -1,0 +1,132 @@
+/* Main Container */
+.all-requests-container {
+  max-width: 1200px;
+  padding-bottom: 2rem;
+}
+
+/* Page Title */
+.page-title {
+  color: #2c3e50;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.title-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+/* Refresh Info */
+.refresh-info {
+  display: flex;
+  align-items: center;
+}
+
+.refresh-button {
+  display: flex;
+  align-items: center;
+}
+
+/* Table Styles */
+.requests-table {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.requests-table th {
+  background-color: #4e73df;
+  color: white;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.requests-table td {
+  vertical-align: middle;
+}
+
+.article-title {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Status Row Colors */
+.status-pending {
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+.status-approved {
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.status-rejected {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.status-completed {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Download Button */
+.download-button {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* No Requests Alert */
+.no-requests-alert {
+  margin-top: 2rem;
+}
+
+/* Loading Spinner */
+.spinner-container {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Error Alert */
+.error-alert {
+  margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .all-requests-container {
+    padding: 0 15px;
+  }
+  
+  .page-title {
+    font-size: 1.25rem;
+  }
+  
+  .refresh-info {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .refresh-button {
+    margin-top: 5px;
+  }
+  
+  .requests-table {
+    font-size: 0.9rem;
+  }
+  
+  .status-badge {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+  }
+}
