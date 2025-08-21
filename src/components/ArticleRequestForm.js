@@ -1490,7 +1490,7 @@ const ArticleRequestForm = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/user/profile', {
+        const res = await axios.get('https://document-delivery-backend-3.onrender.com/api/user/profile', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -1530,7 +1530,7 @@ const ArticleRequestForm = () => {
       const token = localStorage.getItem('token');
 
       await axios.post(
-        'http://localhost:5000/api/article-requests',
+        'https://document-delivery-backend-3.onrender.com/api/article-requests',
         formData,
         {
           headers: {
