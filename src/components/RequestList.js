@@ -780,7 +780,7 @@ const AllRequests = () => {
   const fetchRequests = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:5000/api/article-requests/my-requests', {
+      const res = await axios.get('https://document-delivery-backend-3.onrender.com/api/article-requests/my-requests', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setRequests(res.data);
